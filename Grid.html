@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>css grid example</title>
+    <style>
+  .container{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr ;
+     grid-template-rows: 100px 100px ;
+     grid-template-areas: "c b d d"
+                                        "c b d d"
+                                        "a a d d";
+     grid-gap: 10px 10px;
+     height: 400px;
+     border: 4px  dotted black;
+}
+
+.item{
+   padding: 10px;
+background-color: purple;
+}
+.header{
+    grid-area: a;
+}
+.sidebar{
+    gird-area: b;
+}
+.main{
+   grid-area:c;
+}
+.footer{
+   grid-area:d;
+}
+
+</style>
+</head>
+<body>
+ <div class="container">
+    <div class="item header">Python- Easy to learn </div>
+    <div class="item sidebar">Java-one of the best programming language</div>
+    <div class="item main">Html-Hypertext markup language</div>
+    <div class="item footer">Css-Cascading style sheet</div>
+    <div class="item sidebar">C++-Good to learn</div>
+</div>
+</body>
+</html>

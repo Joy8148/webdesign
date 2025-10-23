@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width,initial-scale=1.0">
+    <title>Document</title>
+    </head>
+<body>
+ <style>
+
+        h1{
+            color: purple;
+            text-shadow: 5px 5px 5px black;
+        }
+        @font-face{
+    font-family: superm;
+    src: url(Text/Bd.otf);
+}
+div1{
+    font-family: superm;
+}
+        h3{
+            color: blueviolet;
+            background-color: grey;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        #modalContent {
+            background-color:cadetblue;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid grey;
+            width: 300px;
+            border-radius: 10px;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+
+<div1><h1><i>Application form</i></h1></div1>
+<p>
+    <button onclick="showModal()">Show Modal</button>
+</p>
+
+
+    <div id="modal">
+        <div id="modalContent">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3>Details</h3>
+            <p><i>This is a Application form fill it you details.</i></p>
+            <p> <i>You can add more information or any kind of content here.</i></p>
+        </div>
+    </div>
+
+    <script>
+
+        function showModal() {
+            document.getElementById('modal').style.display = 'block'
+        }
+
+
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none'
+        }
+
+
+        window.onclick = function(event) {
+            if (event.target === document.getElementById('modal')) {
+                closeModal();
+            }
+        }
+    </script>
+</body>
+    <form action="#">
+        <fieldset>
+            <p>
+                <label for="name">First Name</label>
+                <input type="text" name="name"id="name" required placeholder="Enter the Name">
+            </p>
+            <p>
+                <label for="age">Age</label>
+                <input type="number" name="age"id="age" min="0" max="100">
+            </p>
+            <p>
+                <label for="dob">Date Of Birth</label>
+                <input type="date" name="dob"id="dob">
+            </p>
+            <p>
+                <label for="email">Email Id</label>
+                <input type="email" name="email"id="email">
+            </p>
+            <p>
+            <label for="course">Course</label>
+            <input type="course" name="course"id="course">
+            </p>
+        <p>
+            <label for=" sub">Subject</label>
+            <input type="sub" name="sub"id="sub">
+        </p>
+            <p>
+                <label for="mobile No">Mobile No</label>
+                <input type="mobile" name="mobile"id="mobile">
+        </p>
+        <p>
+            <label for="Address">Address</label>
+            <input type="address" name="address"id="address">
+        </p>
+        <p>
+        <label for="pincode">PinCode</label>
+        <input type="pincode" name="pincode"id="pincode">
+        </P>
+        <p>
+        <input type="submit" value="apply">
+        <button type="submit">submit</button>
+        <button type="reset">Reset</button>
+        <button type="Edit">Edit</button>
+        </p>
+        </fieldset>
+    </form>
+</body>
+</html>

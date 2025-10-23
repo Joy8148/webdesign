@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,intial-scale=1.0">
+    <title>Document</title>
+    <head>
+        
+        <body>
+            <p>
+            <input type="text" name="" id="res">
+            </p>
+            <p>
+                <button type="button" onclick="btn('1')">1</button>
+                <button type="button" onclick="btn('2')">2</button>
+                <button type="button" onclick="btn('3')">3</button>
+                <button type="button" onclick="btn('4')">4</button>
+                </p>
+                <p>
+                <button type="button" onclick="btn('5')">5</button>
+                <button type="button" onclick="btn('6')">6</button>
+                <button type="button" onclick="btn('7')">7</button>
+                <button type="button" onclick="btn('8')">8</button>
+                </p>
+                <p>
+                <button type="button" onclick="btn('9')">9</button>
+                <button type="button" onclick="btn('0')">0</button>
+                <button type="button" onclick="btn('.')">.</button>
+                <button type="button" onclick="btn('%')">%</button>
+                </p>
+                <p>
+                <button type="button" onclick="btn('+')">+</button>
+                <button type="button" onclick="btn('-')">-</button>
+                <button type="button" onclick="btn('*')">*</button>
+                <button type="button" onclick="btn('/')">/</button>
+                <button type="button" onclick="clickedvalue()">=</button>
+            </p>
+            <p>
+            <div id="res"></div>
+            </p>
+            <script>
+               const inp=document.queryselector("#res")
+               function btn(a)
+               {
+                inp.value=inp.value+a
+               }
+               const res=document.queryseletor("#res")
+               function clickedvalue()
+               {
+                res.value=eval(res.value)
+               }
+            </script>
+        </body>
+    </head>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"content="width=device-width,initial-scale=1.0">
+        <title>Document</title>
+        </head>
+        <body>
+            <input type="text"name=""id="name">
+            <button onclick="msg()">submit</button>
+             <button onclick="show()">show</button>
+              <button onclick="display()">display</button>
+               <button onclick="showanother()">showanother</button>
+               <div id="disname">
+               </div>
+               <input type="text"name=""id="name1">
+               <script>
+                function msg()
+                {
+                    alert("new msg")
+                }
+                function show()
+                {
+                    let name=document.querySelector("#name").value 
+                     alert(name)
+                }
+                function display()
+                {
+                    let name=document.querySelector("name").value
+                    let dis=document.querySelector("#disname")
+                    dis.textcontent=name
+                }
+                function showanother()
+                {
+                    document.querySelector("#name1").value=document.querySelector("#name").value
+                }
+               </script>
+
+        </body>
+        </html>

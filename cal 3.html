@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"content="width=device-width,initial-scale=1.0">
+        <title>Document</title>
+    </head>
+       <h3>CALCULATOR</h3>
+
+    <style>
+          h3{
+        color: rgb(128, 0, 0);
+        text-shadow: 5px 5px 5px black;
+    }
+    div1{
+        border: dotted;
+        margin-left:5px;
+        padding-bottom: 3px;
+    
+       background-color: rgb(182, 173, 230);
+    }
+    div2{
+        border: groove;
+        margin-left:5px;
+        padding-bottom: 3px;
+         background-color: rgb(182, 173, 230);    
+    }
+
+    div3{
+        border: solid;
+        margin-top: 50px;
+        padding-bottom: 2em;
+        background-color:none;
+    }
+    div.relative{
+    position:relative;
+    width:200px;
+    height:200px;
+    border:3px solid rgb(196, 8, 52);
+    background-color: darkgrey;
+}
+
+
+
+</style>
+
+
+    <body>
+        <div class="relative">
+        <br>
+     
+       <div1><input type="text" name="" id="res"></div1>
+        </br>
+
+        <p>
+       <div2><button type="button" onclick="btn('1')">1</button>
+        <button type="button" onclick="btn('2')">2</button>
+        <button type="button" onclick="btn('3')">3</button>
+        <button type="button" onclick="btn('4')">4</button></div2>
+        </p>
+
+        <p>
+        <div2><button type="button" onclick="btn('5')">5</button>
+        <button type="button" onclick="btn('6')">6</button>
+        <button type="button" onclick="btn('7')">7</button>
+        <button type="button" onclick="btn('8')">8</button></div2>
+        </p>
+
+         <p>
+       <div2><button type="button" onclick="btn('9')">9</button>
+        <button type="button" onclick="btn('0')">0</button>
+        <button type="button" onclick="btn('.')">.</button>
+        <button type="button" onclick="btn('%')">%</button></div2>
+        </p>
+        <p>
+        <div2><button type="button" onclick="btn('+')">+</button>
+        <button type="button" onclick="btn('-')">-</button>
+        <button type="button" onclick="btn('/')">/</button>
+        <button type="button" onclick="btn('*')">*</button>
+        <button type="button" onclick="clickedvalue()">=</button></div2>
+        </p></div>
+
+         <br>
+        <div id="res"></div>
+        </br>
+
+        <script>
+           
+            const inp=document.querySelector("#res")
+            function btn(a)
+            {
+                inp.value=inp.value+a
+            
+            }
+            const res=document.querySelector("#res")
+            function clickedvalue()
+            {
+                res.value=eval(res.value)
+            }
+
+        </script>
+    </body>
+</html>

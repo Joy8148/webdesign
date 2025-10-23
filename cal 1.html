@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width,initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br>
+        <input type="text" name="" id="avalue">
+        <input type="text" name="" id="bvalue">
+        <input type="text" name="" id="res">
+        </br>
+
+        <br>
+        <button type="button" onclick="add()">+</button>
+        <button type="button" onclick="minus()">-</button>
+        <button type="button" onclick="divid()">/</button>
+        <button type="button" onclick="multiple()">*</button>
+        </br>
+
+        <br>
+        <div id="res"></div>
+        </br>
+        
+        <script>
+            function add()
+            {
+                const a =document.querySelector("#avalue")
+                const b =document.querySelector("#bvalue")
+                const res =document.querySelector("#res")
+                res.value=Number(a.value)+Number(b.value)
+            }
+             function minus()
+            {
+                const a =document.querySelector("#avalue")
+                const b =document.querySelector("#bvalue")
+                const res =document.querySelector("#res")
+                res.value=Number(a.value)-Number(b.value)
+            }
+             function divid()
+            {
+                const a =document.querySelector("#avalue")
+                const b =document.querySelector("#bvalue")
+                const res =document.querySelector("#res")
+                res.value=Number(a.value)/Number(b.value)
+            }
+             function multiple()
+            {
+                const a =document.querySelector("#avalue")
+                const b =document.querySelector("#bvalue")
+                const res =document.querySelector("#res")
+                res.value=Number(a.value)*Number(b.value)
+            }
+
+        </script>
+    </body>
+</html>

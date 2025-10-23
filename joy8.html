@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charser="UTF-8">
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>css grid example</title>
+<style>
+.container{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 100px 100px;
+   grid-template-areas: "c b d d"
+                                   "c b d d"
+                                   "c b d d";
+   grid-gap: 10px 10px;
+   height: 400px;
+   border: 1px solid #000;
+}
+.item{
+   padding: 10px;
+   background-color: pink;
+  }
+.header{
+  grid-area: a;
+ }
+.sidebar{
+   grid-area: b;
+}
+.main{
+  grid-area: c;
+}
+.footer{
+  grid-area: d;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="item header">header</div>
+  <div class="item siderbar">siderbar</div>
+  <div class="item main">main content</div>
+  <div class="item footer">footer</div>
+</div>
+</body>
+</html>

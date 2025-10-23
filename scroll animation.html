@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+     <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll Animation Example</title>
+  <style>
+    body {
+      margin: 0;
+      height: 200vh;
+     background-color: grey;
+    }
+
+    .box {
+      width: 200px;
+      height: 200px;
+      background: crimson;
+      position: absolute;
+      top: 150vh;
+      left: 50%;
+      transform: translateX(-500%);
+      opacity: 0;
+      transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    }
+
+    .box.visible {
+      opacity: 1;
+      transform: translate(-50%, -50px);
+    }
+  </style>
+</head>
+<body>
+  <h1 style="color:white; padding:20px;">Scroll down 👇</h1>
+  <div class="box"></div>
+
+  <script>
+    const box = document.querySelector('.box');
+
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      const triggerPoint = window.innerHeight * 0.8; 
+      const boxTop = box.getBoundingClientRect().top;
+      console.log(boxTop,triggerPoint)
+      if(boxTop < triggerPoint) {
+        box.classList.add('visible');
+      } else {
+        box.classList.remove('visible');
+      }
+    });
+  </script>
+</body>
+</html>

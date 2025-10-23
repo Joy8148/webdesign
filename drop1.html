@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <style>
+      .dropbtn{
+         background-color: rgb(38,4,160);
+         color:black;
+         padding: 16px;
+         font-size: 16px;
+         border: none;
+         cursor: pointer;
+      }
+      .dropdown{
+         position: relative;
+         display: inline-block;
+      }
+      .dropdown-content{
+         display: none;
+         position: absolute;
+         background-color: #f9f9f9;
+         min-width: 160px;
+         box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+      
+      }
+      .dropdown-content a{
+         color: black;
+         padding:12px 16px;
+         text-decoration: none;
+         display: block;
+      }
+      .dropdown-content a:hover{
+         background-color: #94e97f;
+      }
+      .dropdown:hover .dropdown-content{
+         display: block;
+      }
+      .dropdown:hover .dropbtn{
+         background-color: #af64be;
+      }
+   </style>
+</head>
+<body>
+   <h2> dropdown menu</h2>
+   <p>hello world</p>
+   <div class="dropdown">
+      <button class="dropbtn">dropdown</button>
+      <div class="dropdown-content">
+         <a href="css/style1.css">link1</a>
+         <a href="css/style2.css">link2</a>
+         <a href="css/style3.css">link3</a>
+      </div>
+   </div>
+   <p><strong>Note:</strong>its is also possible to specify all the background</p>
+</body>
+</html>

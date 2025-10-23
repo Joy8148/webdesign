@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>position</title>
+<style>
+div.relative{
+  position:relative;
+  width:300px;
+  height:200px;
+  border:3px solid rgb(196,8,8);
+}
+div.absolute{
+   position:absolute;
+   top:90px;
+   left:10px;
+   width:200px;
+   height:100px;
+   border:3px solid black;
+}
+div.fixed{
+   position:fixed;
+   width:300px;
+   height:100px; 
+  border:3px solid red;
+}                                                                   
+</style>
+</head>
+<body>
+<h3>position</h3>
+<p>An element with position:absolute;is position relative to the nearest position ancestor</p>
+<div class="relative"> This div element has position:relative;</div>
+<div class="absolute">This div has position:absolute;</div>
+<div class="fixed">This div has fixed:position;</div>
+</body>
+</html>
