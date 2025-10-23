@@ -1,0 +1,24 @@
+*{
+background-color:rgb(199,199,199);
+}
+div{
+ background-color:darkblue;
+}
+.cn{
+    background-color:red;
+    padding: 100px;
+    margin: 80px;
+    border:  50px;
+}
+#identity{
+  background-color: aquamerine;
+  border: 40px rgb(50,10,124);
+  width:50vw;
+  height: 70vh;
+}
+#identity: hover{
+  background-color:rgb(255,251,0);
+  border:40px rgb(208,255,0);
+  width:50px;
+  height: 70px;
+}

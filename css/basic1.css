@@ -1,0 +1,18 @@
+*{
+background-color:antiquewhite;
+}
+div{
+background-color:aqua;
+}
+.cn{
+    background-color:aquamerine;
+    padding;200px;
+    marigin:20px;
+    border:px solid red;
+}
+#id1{
+background-color:rgd(255,255,255);
+border:50px solid red;
+width;50vw;
+height:50vh
+}
